@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/admission.css">
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        .form {
+            background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.317), rgba(234, 240, 247, 0.395)), url('images/form1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 25px 0 25px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="nav">
+            <div class="topnav">
+                <div class="left">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li class="edit"><img src="images/pencil.png" alt="">
+                            <p>Apply Online</p>
+                        </li>
+                        <li class="edit"><img src="images/lock.png" alt="">
+                            <p>Login</p>
+                        </li>
+                        <li class="partition"></li>
+                        <li class="link"><img src="images/facebook.png" alt=""></li>
+                        <li class="link"><img src="images/instagram.png" alt=""></li>
+                        <li class="link"><img src="images/twitter.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border"></div>
+
+            <div class="bottomnav">
+                <ul>
+                    <li class="active"> <a href="index.html">Home<span></span></a> </li>
+                    <li> <a href="about.html">About us<span></span></a> </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Members ⏷</a>
+                        <div class="dropdown-content">
+                            <a href="board-member.html">Board member</a>
+                            <a href="science.html">Science Faculty</a>
+                            <a href="management.html">Management faculty</a>
+                            <a href="staff.html">Staff member</a>
+                            <a href="#">Visiting faculty</a>
+                            <a href="#">Academic committee</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Admission ⏷</a>
+                        <div class="dropdown-content">
+                            <a href="admission-procedure.html">Admission Process</a>
+                            <a href="program.html">Programs</a>
+                            <a href="application-form.html">Application Form</a>
+                            <a href="#">Eligibility Criteria</a>
+                        </div>
+                    </li>
+                    <li> <a href="news.html">News<span></span></a> </li>
+                    <li> <a href="gallery.html">Gallery<span></span></a> </li>
+                    <li> <a href="contact.html">Contact<span></span></a> </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="admission">
+
+        <div class="form">
+
+            <img src="images/logo-f.png" alt="Logo" class="watermark">
+
+            <div class="container-form">
+                <h2>Admission Form</h2>
+                <form id="admissionForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="radio-group">
+                          <div class="radio-item">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+                            <label class="form-check-label" for="male">Male</label>
+                          </div>
+                          <div class="radio-item">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required>
+                            <label class="form-check-label" for="female">Female</label>
+                          </div>
+                          <div class="radio-item">
+                            <input class="form-check-input" type="radio" name="gender" id="other" value="Other" required>
+                            <label class="form-check-label" for="other">Other</label>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" class="form-control" id="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactNumber">Contact Number:</label>
+                        <input type="tel" class="form-control" id="contactNumber" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea class="form-control" id="address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="parentsName">Parents Name:</label>
+                        <input type="text" class="form-control" id="parentsName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parentContact">Parent's Contact Number:</label>
+                        <input type="tel" class="form-control" id="parentContact" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="stream">Choose Stream:</label>
+                        <select class="form-control" id="stream" required>
+                            <option value="">Select Stream</option>
+                            <option value="computer">Computer Science</option>
+                            <option value="bio">Bio Science</option>
+                            <option value="Management">Management</option>
+                            <option value="HM">Hotel Management</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="previousSchool">Previous School Name:</label>
+                        <input type="text" class="form-control" id="previousSchool" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gpa">GPA Score in SEE:</label>
+                        <input type="number" step="0.01" class="form-control" id="gpa" min="0" max="4" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------Footer------------------------>
+    <section id="footers">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="f-left">
+                            <div class="a-title">
+                                <h1 class="h-secondary">CONTACT</h1>
+                                <div class="line2"></div>
+                            </div>
+                            <div class="f-content">
+                                <div class="f-box">
+                                    <div class="f-icon">
+                                        <img src="images/address.png" alt="">
+                                    </div>
+                                    <div class="f-text">
+                                        <h3>Address</h3>
+                                        <p>Gaidakot-02, Nawalpur</p>
+                                    </div>
+                                </div>
+
+                                <div class="f-box">
+                                    <div class="f-icon">
+                                        <img src="images/phone.png" alt="">
+                                    </div>
+                                    <div class="f-text">
+                                        <h3>Phone no.</h3>
+                                        <p>00977-78-501078,501281</p>
+                                    </div>
+                                </div>
+
+                                <div class="f-box">
+                                    <div class="f-icon">
+                                        <img src="images/mail.png" alt="">
+                                    </div>
+                                    <div class="f-text">
+                                        <h3>email</h3>
+                                        <p>info@oxfordcollege.edu.np</p>
+                                    </div>
+                                </div>
+
+                                <div class="f-box">
+                                    <div class="f-icon">
+                                        <img src="images/internet.png" alt="">
+                                    </div>
+                                    <div class="f-text">
+                                        <h3>Website</h3>
+                                        <p>www.oxfordcollege.edu.np</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="f-mid">
+                            <div class="a-title">
+                                <h1 class="h-secondary">QUICK LINKS</h1>
+                                <div class="line2"></div>
+                            </div>
+                            <div class="f-mid-text">
+                                <ul>
+                                    <li> <a href="about.html">About us</a> </li>
+                                    <li> <a href="product.html">Admission</a> </li>
+                                    <li> <a href="course.html">Courses</a> </li>
+                                    <li> <a href="gallery.html">Gallery</a> </li>
+                                    <li> <a href="contact.html">Contact</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="f-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14969.477668883019!2d85.92442038871539!3d20.284970743328103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a197555eca1853d%3A0x60083b2363b95fc2!2sOXFORD%20COLLEGE%20OF%20ENGINEERING%20%26%20MANAGEMENT!5e0!3m2!1sen!2snp!4v1682165296182!5m2!1sen!2snp"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------Footer end------------------------>
+
+    <!-- footer icons -->
+    <section id="icon">
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <span><i class="fab fa-facebook-f"></i></span>
+            </li>
+            <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <span><i class="fab fa-twitter"></i></span>
+            </li>
+            <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <span><i class="fab fa-instagram"></i></span>
+            </li>
+            <li class="icon github">
+                <span class="tooltip">Github</span>
+                <span><i class="fab fa-github"></i></span>
+            </li>
+            <li class="icon youtube">
+                <span class="tooltip">Youtube</span>
+                <span><i class="fab fa-youtube"></i></span>
+            </li>
+        </ul>
+    </section>
+    <!-- ---------footer icons end --------- -->
+
+    <!-- ---------copyright --------- -->
+    <section id="copyright">
+        © 2023 Oxford College Of Engineering and Management
+    </section>
+    <!-- ---------copyright end --------- -->
+</body>
+
+</html>
